@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            VIRTUAL LAB - ECE18R369 DIGITAL VLSI DESIGN 
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div>
+            <img src="klu.jpeg" width="100%">
+        </div>
+        <div>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <center><h1><b>Design of simple circuit using CMOS - 4x1 Multiplexer</b></h1></center>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <br>
+            <h1><b>Introduction</b></h1>
+            <h3><b>A multiplexer or mux is a combinational circuits that selects several analog or digital input signals and forwards the selected input into a single output line. A multiplexer of 2 n inputs has n selected lines, are used to select which input line to send to the output.</b></h3>
+            <br>
+            <center><img src="5.1.png"></center>
+            <br>
+            <center><h5>Figure shows how a 4:1 MUX can be constructed out of two 2:1 MUXs.</h5></center>
+            <br>
+            <center><img src="5.2.png"></center>
+            <br>
+            
+            <h1><b>Design using pass-transistor logic</b></h1>
+            <h3><b>A multiplexer can be designed using various logics. Fig.3 shows how a 2:1 MUX is implemented using a pass-transistor logic. GS .</b></h3>
+            <center><img src="5.3.png"></center>
+            <br>
+            <h3><b>The pass-transistor logic attempts to reduce the number of transistors to implement a logic by allowing the primary inputs to drive gate terminals as well as source-drain terminals. The implementation of a 2:1 MUX requires 4 transistors (including the inverter required to invert S), while a complementary CMOS implementation would require 6 transistors. The reduced number of devices has the additional advantage of lower capacitance.</b></h3>
+            <br>
+
+            <h1><b>Design using transmission gate logic</b></h1>
+            <h3><b>A transmission gate is an electronic element and good non mechanical relay built with CMOS technology. It is made by parallel combination of nMOS and pMOS transistors with the input at the gate of one transistor (C) being complementary to the input at the gate () of the other. The symbol of a transmission gate is shown below in fig.4.</b></h3>
+            <center><img src="5.4.png"></center>
+            <br>
+            <h3><b>The transmission gate acts as a bidirectional switch controlled by the gate signal C. When C=1, both MOSFETs are on, allowing the signal to pass through the gate. In short, A=B, if C=1. On the other hand, C=0, places both transistors in cut-off, creating an open circuit between nodes A and B. Fig.5 shows the implementation of a 2:1 MUX using transmission gate logic.</b></h3>
+            <br>
+            <center><img src="5.5.png"></center>
+            <br>
+            <h3><b>Here, the transmission gates selects input A or B on the basis of the value of the control signal S. When S=0, Z=A and when S=1, Z=B.</b></h3>
+            <br>
+            <center><a href="4procedure.html"><button type="button" class="btn btn-primary">Go To Procedure</button></a><center></center>
+            <br>
+        </div>
+    </body>
+</html>

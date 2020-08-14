@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            VIRTUAL LAB - ECE18R369 DIGITAL VLSI DESIGN 
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div>
+            <img src="klu.jpeg" width="100%">
+        </div>
+        <div>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <center><h1><b>Design and Simulation of CMOS inverter </b></h1></center>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <br>
+            <h1><b>Introduction</b></h1>
+            <h3><b>The inverter is universally accepted as the most basic logic gate doing a Boolean operation on a single input variable. Fig.1 depicts the symbol, truth table and a general structure of a CMOS inverter. As shown, the simple structure consists of a combination of an pMOS transistor at the top and a nMOS transistor at the bottom.</b></h3>
+            <br>
+            <center><img src="2.1.png"></center>
+            <br>
+            <h3><b>CMOS is also sometimes referred to as complementary-symmetry metal–oxide–semiconductor . The words "complementary-symmetry" refer to the fact that the typical digital design style with CMOS uses complementary and symmetrical pairs of p-type and n-type metal oxide semiconductor field effect transistors (MOSFETs) for logic functions. Two important characteristics of CMOS devices are high noise immunity and low static power consumption. Significant power is only drawn while the transistors in the CMOS device are switching between on and off states. Consequently, CMOS devices do not produce as much waste heat as other forms of logic, for example transistor-transistor logic (TTL) or NMOS logic, which uses all n-channel devices without p-channel devices.</b></h3>
+            <br>
+            <h1><b>Inverter Static Characteristics (VTC)</b></h1>
+            <h3><b>Digital inverter quality is often measured using the Voltage Transfer Curve (VTC), which is a plot of input vs. output voltage. From such a graph, device parameters including noise tolerance, gain, and operating logic-levels can be obtained.</b></h3>
+            <center><img src="2.2.png"></center>
+            <br>
+            <h3><b>Ideally, the voltage transfer curve (VTC) appears as an inverted step-function - this would indicate precise switching between on and off - but in real devices, a gradual transition region exists. The VTC indicates that for low input voltage, the circuit outputs high voltage; for high input, the output tapers off towards 0 volts. The slope of this transition region is a measure of quality - steep (close to -Infinity) slopes yield precise switching. The tolerance to noise can be measured by comparing the minimum input to the maximum output for each region of operation (on / off). This is more explicitly shown in the fig.</b></h3>
+            <br>
+            <center><img src="2.3.png"></center>
+            <br>
+            <h3><b>Noise margin : is a parameter intimately related to the transfer characteristics. It allows one to estimate the allowable noise voltage on the input of a gate so that the output will not be affected. Noise margin (also called noise immunity) is specified in terms of two parameters - the low noise margin N L , and the high noise margin N H . Referring to above figure, N L is defined as the difference in magnitude between the maximum LOW input voltage recognized by the driven gate and the maximum LOW output voltage of the driving gate. That is, N L =|V IL - V OL |. Similarly, the value of N H is the difference in magnitude between the minimum HIGH output voltage of the driving gate and the minimum HIGH input voltage recognizable by the driven gate. That is, N MH =|V OH - V IH |. Where V IH |: minimum HIGH input voltage, V IL : maximum LOW input voltage, V OH : minimum HIGH output voltage, V OL : maximum LOW output voltage.</b></h3>
+            <br>
+            <h1><b>Inverter Dynamic Characteristics</b></h1>
+            <h3><b>Fig.4 shows the dynamic characteristics of a CMOS inverter. The following are some formal definitions of temporal parameters of digital circuits. All percentages are of the steady state values.</b></h3>
+            <center><img src="2.4.png"></center>
+            <br>
+            <h3><b>Rise Time (t r ) : Time taken to rise from 10% to 90%.</b></h3>
+            <br>
+            <h3><b>Fall Time (t f ): Time taken to fall from 90% to 10%</b></h3>
+            <br>
+            <h3><b>Edge Rate (t rf ): (t r + t f )/2.</b></h3>
+            <br>
+            <h3><b>High-to-Low propagation delay (t pHL ): Time taken to fall from V OH to 50%.</b></h3>
+            <br>
+            <h3><b>Low-to-High propagation delay (t pLH ): Time taken to rise from 50% to V OL .</b></h3>
+            <br>
+            <h3><b>Propagation Delay (t p ): (t pHL + t pLH )/2.</b></h3>
+            <br>
+            <h3><b>Contamination Delay (t cd ): Minimum time from the input crossing 50% to the output crossing 50%</b></h3>
+            <br>
+            <center><a href="2procedure.html"><button type="button" class="btn btn-primary">Go To Procedure</button></a><center></center>
+            <br>
+        </div>
+    </body>
+</html>
